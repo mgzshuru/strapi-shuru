@@ -12,6 +12,8 @@
     "seed:example": "node ./scripts/seed.js",
     "seed:home": "node ./scripts/seed-shuru.js",
     "seed:pages": "node ./scripts/seed-pages.js",
+    "seed:header-footer": "node ./scripts/seed-header-footer.js",
+    "seed:all": "npm run seed:home && npm run seed:pages && npm run seed:header-footer",
     "db:clean": "rm -f .tmp/data.db && rm -rf public/uploads/*",
     "start": "strapi start",
     "strapi": "strapi",
