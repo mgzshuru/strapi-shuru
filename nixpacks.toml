@@ -1,18 +1,15 @@
 [phases.setup]
-nixPkgs = ["nodejs_20", "yarn"]
+nixPkgs = ["nodejs_20", "npm"]
 
 [phases.install]
-cmds = ["yarn install --frozen-lockfile"]
+cmds = ["npm install"]
 
 [phases.build]
-cmds = ["yarn build"]
+cmds = ["npm run build"]
 
 [start]
-cmd = "yarn run seed:all && yarn start"
+cmd = "npm run seed:all && npm run start"
 
 [variables]
 NODE_ENV = "production"
 PORT = "1337"
-
-[staticAssets]
-"./public" = "/"
