@@ -24,6 +24,7 @@
   "dependencies": {
     "@strapi/plugin-cloud": "5.40.0",
     "@strapi/plugin-users-permissions": "5.40.0",
+    "@strapi/provider-upload-aws-s3": "^5.40.0",
     "@strapi/strapi": "5.40.0",
     "fs-extra": "^10.0.0",
     "mime-types": "^2.1.27",
