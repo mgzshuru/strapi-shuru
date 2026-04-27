@@ -16,6 +16,7 @@
     "seed:header-footer": "node ./scripts/seed-header-footer.js",
     "seed:fix-thumbnails": "node ./scripts/fix-thumbnails.js",
     "seed:all": "npm run seed:home && npm run seed:pages && npm run seed:header-footer",
+    "seed:sync": "node ./scripts/sync-data.js",
     "db:clean": "rm -f .tmp/data.db && rm -rf public/uploads/*",
     "start": "strapi start",
     "strapi": "strapi",

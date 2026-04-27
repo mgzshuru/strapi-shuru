@@ -8,7 +8,7 @@ cmds = ["npm install"]
 cmds = ["npm run build"]
 
 [start]
-cmd = "npm run seed:fix-thumbnails && npm run start"
+cmd = "npm run seed:sync && npm run seed:fix-thumbnails && npm run start"
 
 [variables]
 NODE_ENV = "production"
