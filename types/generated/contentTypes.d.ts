@@ -585,6 +585,11 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
   options: {
     draftAndPublish: false;
   };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
   attributes: {
     articles: Schema.Attribute.Relation<'manyToMany', 'api::article.article'>;
     children_categories: Schema.Attribute.Relation<
@@ -600,12 +605,11 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
           localized: true;
         };
       }>;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::category.category'
-    > &
-      Schema.Attribute.Private;
+    >;
     name: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.Unique &
