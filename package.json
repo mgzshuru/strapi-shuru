@@ -4,6 +4,7 @@
   "private": true,
   "description": "A Strapi application",
   "scripts": {
+    "sync-data": "node scripts/sync-data.js",
     "build": "strapi build",
     "console": "strapi console",
     "deploy": "strapi deploy",
